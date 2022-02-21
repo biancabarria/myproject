@@ -1,17 +1,12 @@
 {% extends 'main/base.html' %}
 
 {% block title %}
-    Home Page
+    Welcome Page
 {% endblock %}
 
 
 {% block content %}
-    {%if user.is_authenticated %}
-        <h1>GSheet Home Page</h1>
-            <div>
-                <iframe style="width:1000px;height:1500px"src="https://docs.google.com/spreadsheets/d/1BdIa_Ds7htGV5tLU0nNjG8JESaNuozol4wSKsHmq5YM/edit?usp=sharing&amp;widget=true&amp;headers=false"></iframe>
-            </div>
-    {% else %}
-            <p>You need to login, please <a href="/login">Login</a> here!</p>
-    {% endif %}
+    <h1>Welcome</h1>
+    <button onclick="location.href = '/register'">Sign In</button>
+    <button onclick="location.href = '/login'">Log In</button>
 {% endblock %}
