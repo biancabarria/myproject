@@ -12,7 +12,7 @@ def register(response):
             new_user = form.save()
             messages.info(response, "Thanks for registering. You are now logged in.")
             new_user = authenticate(username=form.cleaned_data['username'],
-                password=form.cleaned_data['password'],
+                password=form.cleaned_data['password1'],
                 )
             login(response, new_user)
         return redirect("/")
