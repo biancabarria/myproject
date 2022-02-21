@@ -7,7 +7,7 @@
 
 {% block content %}
     {%if user.is_authenticated %}
-        <h1>GSheet Home Page</h1> <button onclick="location.href = '/logout'">Sign In</button>
+        <h1>GSheet Home Page</h1> <button onclick="location.href = '/logout'">Log out</button>
             <div>
                 <iframe style="width:1000px;height:1500px"src="https://docs.google.com/spreadsheets/d/1BdIa_Ds7htGV5tLU0nNjG8JESaNuozol4wSKsHmq5YM/edit?usp=sharing&amp;widget=true&amp;headers=false"></iframe>
             </div>
