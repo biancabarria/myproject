@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-6*q6w-qqw-%ly0rb%10ct#m05u3@lu!ijywiig6e&9t2u!g0$r
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'https://myformsproject.herokuapp.com/'
+    'myformsproject.herokuapp.com'
 ]
 
 
